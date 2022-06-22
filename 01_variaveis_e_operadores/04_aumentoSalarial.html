@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const salario = Number(prompt("Digite o Salário Atual (em R$):"))
+    const aumento = Number(prompt("Digite a porcentagem de aumento:"))
+
+    //Processamento
+    const valorAumento = salario * (aumento / 100)
+    const novoSalario = salario + valorAumento
+    const novoSalarioFormatado = novoSalario.toLocaleString("pt-BR", { style: "currency", currency: "BRL"})
+
+    //Saída
+    document.write(`O salário atual é de R$ ${salario.toFixed(2)}.<br>`)
+    document.write(`O novo Salário é de R$ ${novoSalario.toFixed(2)}<br>`)
+    document.write(`O novo salário é de ${novoSalarioFormatado} - aqui utilizando formatação por função JS<br>`)
+    document.write(`O ajuste salarial foi de R$ ${valorAumento.toFixed(2)}<br>`)
+    document.write(`O percentual de aumento foi de ${aumento}%`)
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

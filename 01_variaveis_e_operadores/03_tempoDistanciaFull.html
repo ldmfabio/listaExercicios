@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        function calcularTempoViagem() {
+            const distanciaViagem = parseInt(document.getElementById("distanciaViagem").value)
+            const velocidadeMedia = parseInt(document.getElementById("velocidadeMedia").value)
+            const tempo = distanciaViagem / velocidadeMedia
+            document.getElementById("resultado").innerHTML = `${distanciaViagem} Kilômetros, numa Velocidade Média de ${velocidadeMedia} Kms/Hora, levará cerca de <b>${tempo.toFixed(2)}</b> horas para ser concluída`
+        }
+    </script>
+
+    <title>Cálculo de Tempo de Viagem</title>
+</head>
+
+<body>
+    <div class="mx-auto" width="100%">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Lista de Exercícios - Programação I</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html">Lista 1 -
+                                        Variáveis e
+                                        Operadores</a></li>
+                                <li><a class="dropdown-item" href="../02_condicoes/index.html">Lista 2 - Condições</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Vídeo Aulas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://www.youtube.com/watch?v=ltXOWarw0vI&list=PL6u1VNwqZdJao1FX7QSR0KA7S0p9PHmUl">Curso
+                                        JS - Prof Eduardo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Livros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Introdução ao JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col col-sm-1"></div>
+            <div class="col col-sm-10">
+                <form class="row gx-3 gy-2">
+                    <div class="row"><br></div>
+                    <div class="col-sm-2">
+                        <label for="distanciaViagem">Distância (em Km)</label>
+                        <input type="text" class="form-control" id="distanciaViagem" placeholder="Km da Viagem">
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="velocidadeMedia">Velocidade Média</label>
+                        <input type="text" class="form-control" id="velocidadeMedia" placeholder="Km / Hora">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col col-sm-1"></div>
+            <div class="col col-sm-10">
+                <button class="btn btn-primary" onclick="calcularTempoViagem()">Calcular Tempo de Viagem</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col col-sm-1"></div>
+            <div class="col col-sm-10">
+                <label class="resultado" id="resultado"></label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
