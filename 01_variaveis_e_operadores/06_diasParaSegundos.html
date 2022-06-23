@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const dias = parseFloat(prompt("Digite a quantidade de dias:"))
+    const horas = parseFloat(prompt("Digite a quantidade de horas:"))
+    const minutos = parseFloat(prompt("Digite a quantidade de minutos:"))
+    const segundos = parseFloat(prompt("Digite a quantidade de segundos:"))
+
+    //Processamento
+    const diasParaHoras = dias*24 + horas
+    const horasParaMinutos = diasParaHoras*60 + minutos
+    const minutosParasegundos = horasParaMinutos*60 + segundos
+    
+    //Saída
+    document.write(`O tempo em segundos será de ${minutosParasegundos} segundos.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

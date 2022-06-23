@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const numero = parseInt(prompt("Digite um número menor ou igual a 1000:"))
+
+    //Processamento
+    const milhar = parseInt(numero / 1000)
+    const centena = parseInt((numero - milhar*1000) / 100)
+    const dezena = parseInt((numero - milhar*1000 - centena*100) / 10)
+    const unidade = parseInt((numero - milhar*1000 - centena*100 - dezena*10) / 1)
+    
+    //Saída
+    document.write(`Este número contém:<br>
+    - ${milhar} números na casa do milhar<br>
+    - ${centena} números na casa da centena<br>
+    - ${dezena} números na casa da dezena<br>
+    - ${unidade} números na casa da unidade<br>`)
+    //document.write(`${ovos} ovos contém ${duzias2.toFixed(0)} dúzias.<br>`) // Uma forma de apresentar decimal em inteiro
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

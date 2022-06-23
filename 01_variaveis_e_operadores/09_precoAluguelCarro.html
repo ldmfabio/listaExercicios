@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const dias = parseFloat(prompt("Digite a quantidade de dias alugados:"))
+    const km = parseFloat(prompt("Digite a quantidade de quilômetros rodados:"))
+
+    //Processamento
+    const diaria = 60 * dias
+    const kmsRodados = 0.15 * km
+    const total = diaria + kmsRodados
+    
+    //Saída
+    document.write(`O valor do aluguel do carro será de R$ ${total.toFixed(2)}.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

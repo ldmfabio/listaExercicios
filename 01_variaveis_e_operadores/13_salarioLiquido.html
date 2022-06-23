@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const ganho = parseFloat(prompt("Digite o valor da hora:"))
+    const horas = parseFloat(prompt("Digite quantas horas trabalha por dia:"))
+
+    //Processamento
+    const salarioBrutoMes = ganho*horas*30
+    const INSS = salarioBrutoMes * 0.08
+    const IR = salarioBrutoMes * 0.11
+    const sindicato = salarioBrutoMes * 0.05
+    const salarioLiquido = salarioBrutoMes - (INSS + IR + sindicato)
+    
+    //Saída
+    document.write(`Salário bruto: R$ ${salarioBrutoMes.toFixed(2)}<br><br>
+    Descontos mensais:<br>
+    - INSS (8%) R$ ${INSS.toFixed(2)}<br>
+    - IR (11%) R$ ${IR.toFixed(2)}<br>
+    - Sindicato (5%) R$ ${sindicato.toFixed(2)}.<br><br>`)
+    document.write(`O salário líquido mensal será de R$ ${salarioLiquido.toFixed(2)}.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

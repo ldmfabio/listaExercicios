@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const p1 = parseFloat(prompt("Digite a nota da primeira prova:"))
+    const at1 = parseFloat(prompt("Digite a nota da primeira atividade:"))
+
+    const p2 = parseFloat(prompt("Digite a nota da segunda prova:"))
+    const at2 = parseFloat(prompt("Digite a nota da segunda atividade:"))
+
+    //Processamento
+    const media1 = p1 * 0.7 + at1 * 0.3
+    const media2 = p2 * 0.7 + at2 * 0.3
+    const total = (media1 + media2)/2
+    
+    //Saída
+    document.write(`A média final do estudante é ${total.toFixed(2)}.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
