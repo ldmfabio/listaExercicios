@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const cigarros = parseInt(prompt("Digite a quantidade de cigarros por dia:"))
+    const anos = parseInt(prompt("Digite a quantidade de anos:"))
+
+    //Processamento
+    const dias = (cigarros * 10)/60/24
+    const total = dias * anos * 365
+
+    //Saída
+    document.write(`A quantidade de dias perdidos será de ${total.toFixed(2)}.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
