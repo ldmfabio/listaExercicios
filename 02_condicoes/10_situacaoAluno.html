@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const media = parseFloat(prompt("Digite a média anual do aluno:"))
+    const falta = parseInt(prompt("Digite a quantidade de faltas do aluno:"))
+    const aulas = parseInt(prompt("Digite a quantidade de aulas:"))
+
+    //Processamento
+    const faltasLimite = (25*aulas)/100
+
+    if (falta > faltasLimite){
+
+        //Primeira alterantiva de saída
+        document.write("O aluno está reprovado por faltas (RF).")
+
+    }else{// Frequência acima de 75%
+
+        if (media < 7){
+
+            //Segunda alterantiva de saída
+            document.write("O aluno deverá prestar o exame final (EF).")
+
+        }else {
+
+            //Terceira alterantiva de saída
+            document.write("O aluno está aprovado (AP)!")
+
+        }
+
+
+    }
+    
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

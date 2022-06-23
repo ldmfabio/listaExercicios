@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const l1 = parseFloat(prompt("Digite o valor do primeiro lado:"))
+    const l2 = parseFloat(prompt("Digite o valor do segundo lado:"))
+    const l3 = parseFloat(prompt("Digite o valor do terceiro lado:"))
+
+    //Processamento
+    if ((l1 + l2) > l3 || (l1 + l3) > l2 || (l2 + l3) > l1){
+
+
+        if (l1 == l2 == l3){
+
+            //Primeira alterantiva de saída
+            document.write("A classificação do seu triângulo é: equilátero.")
+
+        }else
+
+        if (l1 == l2 || l1 == l3 || l2 == l3){
+
+            //Primeira alterantiva de saída
+            document.write("A classificação do seu triângulo é: isósceles.")
+
+        }else
+
+        if (l1 !== l2 !== l3){
+
+            //Primeira alterantiva de saída
+            document.write("A classificação do seu triângulo é: escaleno.")
+
+        }
+
+
+    }
+    
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
