@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const celsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"))
+
+    //Processamento
+    const F1 = celsius * (9 / 5) + 32 // Uma fórmula de conversão
+    const F2 = celsius * 1.8 + 32     // Outra fórmula de conversão
+    
+
+    //Saída
+    document.write(`A temperatura será de ${F1.toFixed(2)} ºC.<br>`) // Visualização de texto e variável por crase
+    document.write("A temperatura será de "+`${F2.toFixed(2)} ºC.`)   // Visualização de texto e variável por concatenação
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
