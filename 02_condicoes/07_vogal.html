@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const c1 = prompt("Digite um caractere:")
+
+    //Processamento
+
+    if (isNaN(c1)){
+
+        if (c1 == "a" || c1 == "e" || c1 == "i" || c1 == "o" || c1 == "u"){
+
+            //Primeira alterantiva de saída
+            document.write('O caractere, "'+`${c1}`+'", é uma vogal.')
+
+        }else {
+
+            //Segunda alterantiva de saída
+            document.write('O caractere, "'+`${c1}`+'", não é uma vogal.')
+
+        }
+        
+    }else {
+
+        //Exsceção: número
+        document.write("Insira um caractere válido!")
+
+    }
+
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

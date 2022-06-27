@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const n1 = parseFloat(prompt("Digite a nota antes da ajuda:"))
+    const n2 = parseFloat(prompt("Digite a nota depois da ajuda do big brother:"))
+
+    //Processamento
+
+    const diferenca = n2 - n1
+
+
+    if (diferenca > 0){
+
+        //Primeira alterantiva de saída
+        const acrescimo = (diferenca/4).toFixed(2) // Apresenta apenas duas casas decimais depois da vírgula
+        document.write("O acréscimo na nota do Big Brother será de "+`${acrescimo}`+" pontos.")
+
+    }else {
+
+        //Segunda alterantiva de saída
+        document.write("Não houve aumento na nota do Little Brother, portanto, não haverá acrescimo na nota do Big Brother.")
+
+    }// Exceção: acréscimo de 0.00, por 5.02
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

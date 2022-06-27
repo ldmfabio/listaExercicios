@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const a = parseInt(prompt("Digite o valor de A:"))
+    const b = parseInt(prompt("Digite o valor de B:"))
+    const c = parseInt(prompt("Digite o valor de C:"))
+
+    //Processamento
+    if (a == 0){
+
+        //Primeira alterantiva de saída
+        document.write("Esta é uma equação de 1º grau.")
+
+    }else{
+
+        const delta = (b ** 2) - (4 * a * c)
+
+        if (delta < 0){
+
+            //Segunda alterantiva de saída
+            document.write("Com o delta "+`${delta}`+", esta equação não possui raízes reais.")
+
+        }else
+        if (delta == 0){
+
+            const bhaskara = (-b +- Math.sqrt(delta)) / 2*a
+
+            //Terceira alterantiva de saída
+            document.write("Com o delta "+`${delta}`+", esta equação possui apenas uma raíz real, que é: "+`${bhaskara}`)
+
+        }else
+        if (delta > 0){
+
+            const bhaskaraPositiva = (-b + Math.sqrt(delta)) / 2*a
+            const bhaskaraNegativa = (-b - Math.sqrt(delta)) / 2*a
+            //Quarta alterantiva de saída
+            document.write("Com o delta "+`${delta}`+", esta equação possui mais de uma raíz real, que são: "
+            +`${bhaskaraPositiva.toFixed(2)}`+" e "+`${bhaskaraNegativa.toFixed(2)}`+".")
+
+        }
+
+    }
+    
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

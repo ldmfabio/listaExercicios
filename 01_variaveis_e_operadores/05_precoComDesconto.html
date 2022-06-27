@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const v1 = parseFloat(prompt("Digite o valor:"))
+    const porcentagem = parseInt(prompt("Digite a porcentagem de desconto:"))
+
+    //Processamento
+    const desconto = ( (v1 * porcentagem) / 100) // Regra de 3
+    const total = v1 - (v1* (porcentagem/100)) // Multiplicação pela porcentagem em decimal
+    
+
+    //Saída
+    document.write(`O desconto será de R$ ${desconto.toFixed(2)}`)
+    document.write(`, totalizando R$ ${total.toFixed(2)}.<br>`)
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

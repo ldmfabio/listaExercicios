@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const preco = parseFloat(prompt("Digite o preço do produto:"))
+
+    //Processamento
+    if (preco > 0 && preco < 280){
+
+        //Primeira alterantiva de saída
+        const precoFinal = preco + (preco*0.2)
+        document.write("O preço final fica: R$ "+`${precoFinal.toFixed(2)}`+".")
+
+    }else
+    if (preco >= 280 && preco < 700){
+
+        //Segunda alterantiva de saída
+        const precoFinal = preco + (preco*0.15)
+        document.write("O preço final fica: R$ "+`${precoFinal.toFixed(2)}`+".")
+
+    }else
+    if (preco >= 700 && preco < 1500){
+
+        //Terceira alterantiva de saída
+        const precoFinal = preco + (preco*0.1)
+        document.write("O preço final fica: R$ "+`${precoFinal.toFixed(2)}`+".")
+
+    }else
+    if (preco >= 1500){
+
+        //Quarta alterantiva de saída
+        const precoFinal = preco + (preco*0.05)
+        document.write("O preço final fica: R$ "+`${precoFinal.toFixed(2)}`+".")
+
+    }
+
+
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

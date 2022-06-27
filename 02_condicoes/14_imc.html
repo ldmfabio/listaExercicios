@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const peso = parseFloat(prompt("Digite o valor do peso:"))
+    const altura = parseFloat(prompt("Digite o valor da altura:"))
+
+    //Processamento
+    const imc = peso / (altura * altura)
+
+    if (imc <= 18.5){
+
+        //Primeira alterantiva de saída
+        document.write("O seu IMC é "+`${imc.toFixed(2)}`+" e indica que você está abaixo do peso (subpeso).")
+
+    }else
+    if (18.5 > imc && imc <= 25){
+
+        //Segunda alterantiva de saída
+        document.write("O seu IMC é "+`${imc.toFixed(2)}`+" e indica que você está dentro do peso adequado (normal).")
+
+    }else
+    if (25 > imc && imc <= 30){
+
+        //Terceira alterantiva de saída
+        document.write("O seu IMC é "+`${imc.toFixed(2)}`+" e indica que você está acima do peso (sobrepeso).")
+
+    }else {
+
+        //Quarta alterantiva de saída
+        document.write("O seu IMC é "+`${imc.toFixed(2)}`+" e indica que você está muito acima do peso (obeso).")
+
+    }
+
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

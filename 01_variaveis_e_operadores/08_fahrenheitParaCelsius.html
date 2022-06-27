@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const fahrenheit = parseFloat(prompt("Digite a temperatura em graus Fahrenheit:"))
+
+    //Processamento
+    const F1 = (fahrenheit - 32) * (5/9)    // Uma fórmula de conversão
+    const F2 = (fahrenheit - 32) * 0.5556   // Outra fórmula de conversão
+    
+
+    //Saída
+    document.write(`A temperatura será de ${F1.toFixed(2)} ºC.<br>`) // Visualização de texto e variável por crase
+    document.write("A temperatura será de "+`${F2.toFixed(2)} ºC.`)   // Visualização de texto e variável por concatenação
+    
+</script>
+
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    const ano = parseInt(prompt("Digite o ano em que nasceu:"))
+
+    //Processamento
+    if (ano < 16){
+
+        //Primeira alterantiva de saída
+        const diferenca = 16 - ano
+        document.write("Você ainda é muito jovem! Lhe faltam "+`${diferenca}`+" anos para votar.")
+
+    }else {
+
+        //Segunda alterantiva de saída
+        document.write("Parabéns!! Você já conquistou a idade necessária para votar no Brasil.")
+
+    }// Exceção: idade negativa
+    
+</script>
+<body>
+    <br>
+    <a href="index.html">Voltar</a>
+</body>
